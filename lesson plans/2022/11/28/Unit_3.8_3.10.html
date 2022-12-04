@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
@@ -426,7 +426,7 @@ d
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Here is some basic code I have created, let's first look into this one: I created a list of pets, cat, dog, fish, and snake. Then I created a for loop, "for i in pets" and this looks at every element/value in pets, so "cat", "dog", "fish" and "snake". This next if statmenets checks if the element in the list is</p>
+<p>Here is some basic code I have created, let's first look into this one: I created a list of pets, cat, dog, fish, and snake. Then I created a for loop, "for i in pets" and this looks at every element/value in pets, so "cat", "dog", "fish" and "snake". This next if statmenets checks if the element in the list is "fish" and if it is, it breaks the loop. The statement would just print, cat and dog since the loop breaks at fish.</p>
 
 </div>
 </div>
@@ -467,6 +467,14 @@ dog
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The purpose of this code is to find the sum of all the even numbers between and any number of your choosing. The integer input asks for the minimum and maximum value. The next statement puts a starting sum value set to 0. The for i in range (minimum,maximum+1) looks at every number between those two values, in this case 1 and 100. Then the if i modulus 2 checks if any numbers that are divisible by 2 and the remainder comes to 0. If there is a number that has a remainder of 0 when divided by 2, it adds that number to the sum. Then the last print statement, prints out the final sum of all even numbers between the two numbers of your choosing.</p>
+
+</div>
+</div>
+</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -474,12 +482,13 @@ dog
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">maximum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"please enter a number that you want to be the maximum value"</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">minimum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"please enter a minimum number you want your range to be"</span><span class="p">))</span>
+<span class="n">maximum</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"please enter a number that you want to be the maximum value"</span><span class="p">))</span>
 <span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="n">maximum</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">minimum</span><span class="p">,</span><span class="n">maximum</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">i</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"The sum of all the even numbers between 1 and"</span><span class="p">,</span> <span class="n">maximum</span><span class="p">,</span> <span class="s2">":"</span><span class="p">,</span> <span class="nb">sum</span><span class="p">)</span>
+        <span class="nb">sum</span> <span class="o">+=</span> <span class="n">i</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"The sum of all the even numbers between"</span><span class="p">,</span> <span class="n">minimum</span><span class="p">,</span> <span class="s2">"and"</span><span class="p">,</span> <span class="n">maximum</span><span class="p">,</span> <span class="s2">":"</span><span class="p">,</span> <span class="nb">sum</span><span class="p">)</span>
     
     
 </pre></div>
@@ -494,7 +503,7 @@ dog
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The sum of all the even numbers between 1 and 20 : 110
+<pre>The sum of all the even numbers between 1 and 3 : 2
 </pre>
 </div>
 </div>
