@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      12 min read
+      14 min read
     
 </span></p>
 
@@ -143,7 +143,6 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h3"><a href="#Hacks-Unit-3-Section-3.8.1">Hacks Unit 3 Section 3.8.1 </a></li>
 <li class="toc-entry toc-h3"><a href="#Hacks-Unit-3-Section-3.8.2">Hacks Unit 3 Section 3.8.2 </a></li>
-<li class="toc-entry toc-h3"><a href="#Hacks-Unit-3-Section-3.8.3">Hacks Unit 3 Section 3.8.3 </a></li>
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Section-10---Lists---Luna-Iwazaki,-Ethan-Tran">Section 10 - Lists - Luna Iwazaki, Ethan Tran </a>
@@ -879,23 +878,6 @@ dog
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Hacks-Unit-3-Section-3.8.3">
-<a class="anchor" href="#Hacks-Unit-3-Section-3.8.3" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>Hacks</strong> Unit 3 Section 3.8.3<a class="anchor-link" href="#Hacks-Unit-3-Section-3.8.3"> </a>
-</h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Put Hacks Here</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p><strong><hr>
 <hr>
 <hr></strong></p>
@@ -987,7 +969,7 @@ dog
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Since CS is taught in different languages the pseudocode represents fundamental programming concepts.</p>
+<p><strong>Lists Recap</strong></p>
 
 </div>
 </div>
@@ -995,7 +977,356 @@ dog
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>append() - adding element to the end of the list</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'taiyo'</span><span class="p">,</span> <span class="s1">'ethan'</span><span class="p">,</span> <span class="s1">'parav'</span><span class="p">,</span> <span class="s1">'nikhil'</span><span class="p">]</span>
+<span class="c1"># add element to the end of the list</span>
+<span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'luna'</span><span class="p">)</span>
+<span class="c1"># start with empty list</span>
+<span class="n">names</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'taiyo'</span><span class="p">)</span>
+<span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'ethan'</span><span class="p">)</span>
+<span class="n">names</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">'parav'</span><span class="p">)</span>
+<span class="n">names</span><span class="o">.</span> <span class="n">append</span><span class="p">(</span><span class="s1">'nikhil'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>insert() - adding an element in a specific position</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'luna'</span><span class="p">,</span> <span class="s1">'taiyo'</span><span class="p">,</span> <span class="s1">'ethan'</span><span class="p">,</span> <span class="s1">'parav'</span><span class="p">,</span> <span class="s1">'nikhil'</span><span class="p">]</span>
+<span class="c1"># adding in a specific position</span>
+<span class="n">names</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">'taiyo'</span><span class="p">)</span>
+<span class="n">names</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="s1">'ethan'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>remove() - remove an item from the list</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'luna'</span><span class="p">,</span> <span class="s1">'taiyo'</span><span class="p">,</span> <span class="s1">'ethan'</span><span class="p">,</span> <span class="s1">'parav'</span><span class="p">,</span> <span class="s1">'nikhil'</span><span class="p">]</span>
+<span class="c1"># deleting by value</span>
+<span class="n">names</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="s1">'parav'</span><span class="p">)</span>
+<span class="c1"># by position</span>
+<span class="k">del</span> <span class="n">names</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>pop() - takes the item off the top of the "stack" (by default it returns the last element of the list but you can also pop from any position)</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'luna'</span><span class="p">,</span> <span class="s1">'taiyo'</span><span class="p">,</span> <span class="s1">'ethan'</span><span class="p">,</span> <span class="s1">'parav'</span><span class="p">,</span> <span class="s1">'nikhil'</span><span class="p">]</span>
+<span class="c1"># pop last item of list</span>
+<span class="n">most_recent_name</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">most_recent_name</span><span class="p">)</span>
+<span class="c1"># pop first item of list</span>
+<span class="n">first_name</span> <span class="o">=</span> <span class="n">names</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">first_name</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>len() - returns the number of items in a list</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'luna'</span><span class="p">,</span> <span class="s1">'taiyo'</span><span class="p">,</span> <span class="s1">'ethan'</span><span class="p">,</span> <span class="s1">'parav'</span><span class="p">,</span> <span class="s1">'nikhil'</span><span class="p">]</span>
+<span class="c1"># find length of list</span>
+<span class="n">num_names</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"There are"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">num_names</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"names."</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>sort() - changes order of list permanently</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>sorted() - returns a copy of the list which leaves the original copy unchanged</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'luna'</span><span class="p">,</span> <span class="s1">'taiyo'</span><span class="p">,</span> <span class="s1">'ethan'</span><span class="p">,</span> <span class="s1">'parav'</span><span class="p">,</span> <span class="s1">'nikhil'</span><span class="p">]</span>
+<span class="c1"># sort permanently</span>
+<span class="n">names</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+<span class="c1"># sort permanently in reverse alphabetical order</span>
+<span class="n">names</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="c1"># temp. sort</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">names</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">names</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+<span class="c1"># reversing the order of a list</span>
+<span class="n">names</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>range() - use to work with number efficiently</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">number</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+<span class="c1"># making list of numbers 1 to 10</span>
+<span class="c1"># using the list() value can generate a large list of numbers</span>
+<span class="n">numbers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>min() - find the least value in list</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<span class="n">least</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">min</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>max() - find the highest value in list</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<span class="n">highest</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">max</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>sum() - sum of all in list</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">70</span><span class="p">,</span> <span class="mi">60</span><span class="p">]</span>
+<span class="n">total</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">nums</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">nums</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Practice Question</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Using the information above fill in the missing code</p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">nums</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">nums</span><span class="o">.</span><span class="c1">#missing code '15'</span>
+<span class="n">nums</span><span class="o">.</span><span class="c1">#missing code '43'</span>
+<span class="n">nums</span><span class="o">.</span><span class="c1">#missing code '81'</span>
+<span class="n">nums</span><span class="o">.</span><span class="c1">#missing code '25'</span>
+
+<span class="n">least</span> <span class="o">=</span> <span class="c1">#missing code</span>
+<span class="nb">print</span><span class="p">(</span><span class="c1">#missing code)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>AP Exam Reference Sheet</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Since CS is taught in different languages the pseudocode represents fundamental programming concepts.</p>
 
 </div>
 </div>
@@ -1040,7 +1371,15 @@ dog
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>APCSP Create Task</strong></p>
+<p><strong>Practice Question</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>If the list words contain ['song', 'book', 'video', 'book'] what will be the following code output</p>
 
 </div>
 </div>
